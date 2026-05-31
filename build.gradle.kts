@@ -5,7 +5,7 @@ plugins {
     id("com.gradle.plugin-publish") version "2.1.1"
 }
 
-group = "com.josephuszhou"
+group = "io.github.JosephusZhou"
 version = "1.0.0"
 
 java {
@@ -27,8 +27,8 @@ gradlePlugin {
 
     plugins {
         create("androidSigning") {
-            id = "com.josephuszhou.androidsigning"
-            implementationClass = "com.josephuszhou.AndroidSigningPlugin"
+            id = "io.github.JosephusZhou.androidsigning"
+            implementationClass = "io.github.JosephusZhou.AndroidSigningPlugin"
             displayName = "Android Signing Plugin"
             description = "Configures Android application signing from local.properties or key.properties."
             tags.set(listOf("android", "signing", "keystore", "local-properties"))

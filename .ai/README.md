@@ -6,13 +6,13 @@ This file defines collaboration rules for AI agents working in the `AndroidSignP
 
 - Project type: standalone Gradle plugin.
 - Language: Kotlin.
-- Primary plugin id: `com.josephuszhou.androidsigning`.
-- Primary package: `com.josephuszhou`.
+- Primary plugin id: `io.github.JosephusZhou.androidsigning`.
+- Primary package: `io.github.JosephusZhou`.
 - Goal: provide reusable Android application signing configuration from `local.properties` or `key.properties`.
 
 ## Important Files
 
-- Plugin implementation: `src/main/kotlin/com/josephuszhou/AndroidSigningPlugin.kt`
+- Plugin implementation: `src/main/kotlin/io/github/JosephusZhou/AndroidSigningPlugin.kt`
 - Build and publishing configuration: `build.gradle.kts`
 - Gradle settings: `settings.gradle.kts`
 - Public documentation: `README.md`
@@ -24,8 +24,8 @@ This file defines collaboration rules for AI agents working in the `AndroidSignP
 - Keep the plugin independent from the parent `DogInventory` project.
 - Do not reference app-specific code, packages, resources, or build logic from `DogInventory`.
 - Preserve the published coordinates unless the user explicitly requests a change:
-  - `group`: `com.josephuszhou`
-  - `plugin id`: `com.josephuszhou.androidsigning`
+  - `group`: `io.github.JosephusZhou`
+  - `plugin id`: `io.github.JosephusZhou.androidsigning`
   - `artifact`: `AndroidSignPlugin`
 - Do not commit local signing files, credentials, keystores, or environment files.
 - Do not add real signing secrets to `local.properties`, `key.properties`, README examples, tests, or build scripts.

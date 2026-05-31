@@ -8,3 +8,4 @@
 - Configure Android application `release` signing automatically.
 - Optionally reuse release signing for `debug` builds.
 - Optionally fall back to debug signing when release signing credentials are absent.
+- Publish under the GitHub-owned `io.github.JosephusZhou` namespace for Gradle Plugin Portal approval.

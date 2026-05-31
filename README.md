@@ -14,11 +14,11 @@ AndroidSignPlugin is a Gradle plugin that centralizes Android application signin
 
 ## Plugin Coordinates
 
-- `group`: `com.josephuszhou`
 - `artifact`: `AndroidSignPlugin`
 - `version`: `1.0.0`
-- `plugin id`: `com.josephuszhou.androidsigning`
-- `package`: `com.josephuszhou`
+- `group`: `io.github.JosephusZhou`
+- `plugin id`: `io.github.JosephusZhou.androidsigning`
+- `package`: `io.github.JosephusZhou`
 
 ## Signing Sources
 
@@ -44,7 +44,7 @@ keyPassword=***
 
 ```kotlin
 plugins {
-    id("com.josephuszhou.androidsigning") version "1.0.0"
+    id("io.github.JosephusZhou.androidsigning") version "1.0.0"
 }
 ```
 
@@ -117,6 +117,8 @@ Current portal metadata:
 - `vcsUrl`: `https://github.com/josephuszhou/AndroidSignPlugin.git`
 - `tags`: `android`, `signing`, `keystore`, `local-properties`
 - `configurationCache`: `false`
+
+The published namespace follows the GitHub-owned `io.github.JosephusZhou` pattern required for plugin portal review.
 
 ## License
 

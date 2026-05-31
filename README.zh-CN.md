@@ -14,11 +14,11 @@ AndroidSignPlugin 是一个 Gradle 插件，用于统一管理 Android 应用签
 
 ## 插件坐标
 
-- `group`: `com.josephuszhou`
 - `artifact`: `AndroidSignPlugin`
 - `version`: `1.0.0`
-- `plugin id`: `com.josephuszhou.androidsigning`
-- `package`: `com.josephuszhou`
+- `group`: `io.github.JosephusZhou`
+- `plugin id`: `io.github.JosephusZhou.androidsigning`
+- `package`: `io.github.JosephusZhou`
 
 ## 签名来源
 
@@ -44,7 +44,7 @@ keyPassword=***
 
 ```kotlin
 plugins {
-    id("com.josephuszhou.androidsigning") version "1.0.0"
+    id("io.github.JosephusZhou.androidsigning") version "1.0.0"
 }
 ```
 
@@ -117,6 +117,8 @@ GRADLE_PUBLISH_SECRET=YOUR_SECRET
 - `vcsUrl`: `https://github.com/josephuszhou/AndroidSignPlugin.git`
 - `tags`: `android`, `signing`, `keystore`, `local-properties`
 - `configurationCache`: `false`
+
+发布命名空间使用 Gradle Plugin Portal 审核认可的 GitHub 用户归属形式：`io.github.JosephusZhou`。
 
 ## License
 
