@@ -4,6 +4,8 @@ AndroidSignPlugin 是一个 Gradle 插件，用于统一管理 Android 应用签
 
 [English README](README.md)
 
+[![Gradle Plugin Portal](https://img.shields.io/gradle-plugin-portal/v/io.github.JosephusZhou.androidsigning?label=Gradle%20Plugin%20Portal&logo=gradle)](https://plugins.gradle.org/plugin/io.github.JosephusZhou.androidsigning)
+
 ## 功能
 
 - 优先从根目录 `local.properties` 读取签名信息。
@@ -12,13 +14,26 @@ AndroidSignPlugin 是一个 Gradle 插件，用于统一管理 Android 应用签
 - 可让 `debug` 构建复用 release 签名。
 - 当 release 签名信息不存在时，可回退到 debug 签名。
 
+## 快速开始
+
+在 Android 项目的 `build.gradle.kts` 中添加插件：
+
+```kotlin
+plugins {
+    id("io.github.JosephusZhou.androidsigning") version "1.0.0"
+}
+```
+
+> 可在 [Gradle Plugin Portal](https://plugins.gradle.org/plugin/io.github.JosephusZhou.androidsigning) 查看所有可用版本。
+
 ## 插件坐标
 
+- `plugin id`: `io.github.JosephusZhou.androidsigning`
 - `artifact`: `AndroidSignPlugin`
 - `version`: `1.0.0`
 - `group`: `io.github.JosephusZhou`
-- `plugin id`: `io.github.JosephusZhou.androidsigning`
 - `package`: `io.github.JosephusZhou`
+- Portal: https://plugins.gradle.org/plugin/io.github.JosephusZhou.androidsigning
 
 ## 签名来源
 

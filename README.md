@@ -4,6 +4,8 @@ AndroidSignPlugin is a Gradle plugin that centralizes Android application signin
 
 [中文文档](README.zh-CN.md)
 
+[![Gradle Plugin Portal](https://img.shields.io/gradle-plugin-portal/v/io.github.JosephusZhou.androidsigning?label=Gradle%20Plugin%20Portal&logo=gradle)](https://plugins.gradle.org/plugin/io.github.JosephusZhou.androidsigning)
+
 ## Features
 
 - Reads signing credentials from the root `local.properties` first.
@@ -12,13 +14,26 @@ AndroidSignPlugin is a Gradle plugin that centralizes Android application signin
 - Can reuse release signing for `debug` builds.
 - Can fall back to debug signing when release credentials are absent.
 
+## Quick Start
+
+Add the plugin to your Android project's `build.gradle.kts`:
+
+```kotlin
+plugins {
+    id("io.github.JosephusZhou.androidsigning") version "1.0.0"
+}
+```
+
+> See the [Gradle Plugin Portal](https://plugins.gradle.org/plugin/io.github.JosephusZhou.androidsigning) for available versions.
+
 ## Plugin Coordinates
 
+- `plugin id`: `io.github.JosephusZhou.androidsigning`
 - `artifact`: `AndroidSignPlugin`
 - `version`: `1.0.0`
 - `group`: `io.github.JosephusZhou`
-- `plugin id`: `io.github.JosephusZhou.androidsigning`
 - `package`: `io.github.JosephusZhou`
+- Portal: https://plugins.gradle.org/plugin/io.github.JosephusZhou.androidsigning
 
 ## Signing Sources
 
